@@ -5,7 +5,7 @@ class StatusBarView
     @element.classList.add("highlight-selected-status","inline-block")
 
   updateCount: (count) ->
-    @element.textContent = "Highlighted: " + count
+    @element.textContent = count
     if count == 0
       @element.classList.add("highlight-selected-hidden")
     else
